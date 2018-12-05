@@ -1,14 +1,14 @@
 class Authentication:
 
     @staticmethod
-    def validate(auth, type_return):
+    def validate(api_key, type_return):
         """
         --> Validate if information base for next
-        :param auth:
+        :param api_key:
         :param type_return:
         :return: Msg error or null
         """
-        validate_token = Authentication.validate_token(auth)
+        validate_token = Authentication.validate_api_key(api_key)
         if validate_token:
 
             return validate_token
@@ -17,14 +17,14 @@ class Authentication:
             return 'param_return incorrect'
 
     @staticmethod
-    def validate_token(auth):
+    def validate_api_key(api_key):
         """
-        --> Validate token
-        :type auth: str
-        :param auth: token of authentication
+        --> Validate api_key
+        :type api_key: str
+        :param api_key: key of authentication
         :return: true or false
         """
-        if auth != 'teste':
+        if api_key != 'eyJuYW1lIjoiR2FicmllbCBDYXN0b3Jpbm8ifQ':
 
             return 'access denied'
 

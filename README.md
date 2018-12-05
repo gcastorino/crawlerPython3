@@ -20,7 +20,7 @@ Baseado no retorno do RSS:
  
 #####Importante
 
- Deverá exigir autenticação/token
+- Deverá exigir autenticação/token
 - Retornos devem ter a possibilidade de ser em JSON ou XML
 - Fazer o uso de testes em código, no projeto, no que couber.
 - Disponibilizar a documentação da API do modo que achar mais apropriado.
@@ -46,14 +46,11 @@ Executar a aplicação rodando o arquivo:
     
     .\run.py 
 
-
-**Nota:** Neste projeto não foi utilizado banco de dados*.
-
 ## Api
 
 Parâmetros esperados
 
-    auth: teste
+    api_key: eyJuYW1lIjoiR2FicmllbCBDYXN0b3Jpbm8ifQ
     type_return: json ou xml
     date_start: dateTime
     date_finish: dateTime
